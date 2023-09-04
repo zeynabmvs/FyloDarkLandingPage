@@ -102,7 +102,8 @@
 /*    src: url('../assets/fonts/woff/IRANYekanX-Regular.woff') format('woff'),*/
 /*        url('../assets/fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');*/
 /*}*/
-
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 /*:root {*/
 /*    --sticky-header-height: 73px;*/
