@@ -10,72 +10,23 @@ module.exports = {
             center: true,
         },
         screens: {
-            // 'small': '480px',
-            // 'tablet': '768px',
-            // 'laptop': '1024px',
-            // 'desktop': '1728px',
-            // 'ultra': '2560px',
+            'mobile': '375px',
+            'laptop': '1440px',
             // 'tablet-down': { 'max': '768px'},
-        },
-        fontSize: {
-            // 'xxs': '10px',
-            // 'xs': '12px',
-            // 'sm': '14px',
-            // 'base': '16px',
-            // 'md': '18px',
-            // 'lg': '20px',
-            // 'xl': '22px',
-            // 'btn-desktop': ['12px', {
-            //     lineHeight: 'normal',
-            //     fontWeight: '500',
-            // }],
-            // 'card-desktop': ['13px', {
-            //     lineHeight: 'normal',
-            //     fontWeight: '700',
-            // }],
-            // 'post-desktop': ['14px', {
-            //     lineHeight: 'normal',
-            //     fontWeight: '900',
-            // }],
-            // 'widget-desktop': ['14px', {
-            //     lineHeight: 'normal',
-            //     fontWeight: '700',
-            // }],
-            // 'p-desktop': ['12px', {
-            //     lineHeight: 'normal',
-            //     fontWeight: '400',
-            // }],
-            // 'tile-desktop': ['18px', {
-            //     lineHeight: '150%',
-            //     fontWeight: '900',
-            // }],
-            // 'tile-mobile': ['17px', {
-            //     lineHeight: '150%',
-            //     fontWeight: '900',
-            // }],
-        },
-        fontWeight: {
-            // thin: '100',
-            // extralight: '100',
-            // light: '200',
-            // normal: '300',
-            // medium: '400',
-            // semibold: '500',
-            // bold: '600',
-            // extrabold: '700',
-            // black: '800',
         },
         extend: {
             colors: {
-                // 'primary': {
-                //     500: '#F63326',
-                //     600: '#E02E23',
-                //     700: '#1A56DB',
-                // },
-                // 'amber': {
-                //     200: '#FCE589',
-                //     700: '#B35309'
-                // },
+                'blue': {
+                    400: 'hsl(217, 28%, 15%)',
+                    500: 'hsl(218, 28%, 13%)',
+                    600: 'hsl(216, 53%, 9%)',
+                    700: 'hsl(219, 30%, 18%)',
+                },
+                'accent': {
+                    'cyan': 'hsl(176, 68%, 64%)',
+                    'blue': 'hsl(198, 60%, 50%)',
+                    'lightred': 'hsl(0, 100%, 63%)',
+                },
                 // 'blue': {
                 //     50: '#EEF5FE',
                 //     100: '#DAE9FD',
@@ -111,7 +62,7 @@ module.exports = {
                 //     800: '#1E293B',
                 //     900: '#0F172A'
                 // },
-                // 'white': '#FFFFFF',
+                'white': 'hsl(0, 0%, 100%)',
                 // 'red': {
                 //     '600': '#FF0000',
                 // },
