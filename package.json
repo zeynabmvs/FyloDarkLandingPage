@@ -1,5 +1,5 @@
 {
-  "name": "sepidtw",
+  "name": "teacher_podcast",
   "version": "0.0.0",
   "scripts": {
     "production:css-app": "cross-env NODE_ENV=development tailwindcss -i assets/css/styles.css -o dist/styles.css --postcss --minify",
