@@ -1,3 +1,6 @@
+/** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
     content: [
         './*.html',
@@ -16,8 +19,10 @@ module.exports = {
         },
         extend: {
             colors: {
-                'primary': '#81BFA8',
-                'primary-2': '#71A894',
+                'primary':{
+                    DEFAULT: '#81BFA8',
+                    light: '#71A894',
+                } ,
                 'gray': {
                     100: '#807E76',
                     200: '#66645E',
