@@ -16,45 +16,17 @@ module.exports = {
         },
         extend: {
             colors: {
-                // 'blue': {
-                //     50: '#EEF5FE',
-                //     100: '#DAE9FD',
-                //     500: '#3B81F5',
-                //     700: '#1D4ED7',
-                // },
-                // 'gray': {
-                //     50: '#F9FAFB',
-                //     100: '#F3F4F6',
-                //     200: '#BBBEC5',
-                //     300: '#D1D5DB',
-                //     400: '#9CA3AF',
-                //     500: '#6B7280',
-                //     700: '#374151',
-                //     800: '#1F2937',
-                //     900: '#111928',
-                // },
-                // 'green': {
-                //     50: '#EFFCF3',
-                //     100: '#DBFBE6',
-                //     500: '#0E9F6E',
-                //     600: '#16A24A'
-                // },
-                // 'slate': {
-                //     50: '#F7F9FB',
-                //     100: '#F0F4F8',
-                //     200: '#E1E7EF',
-                //     300: '#CAD4E0',
-                //     400: '#93A2B7',
-                //     500: '#64748A',
-                //     600: '#475569',
-                //     700: '#334155',
-                //     800: '#1E293B',
-                //     900: '#0F172A'
-                // },
-                'white': 'hsl(0, 0%, 100%)',
-                // 'red': {
-                //     '600': '#FF0000',
-                // },
+                'primary': '#81BFA8',
+                'primary-2': '#71A894',
+                'gray': {
+                    100: '#807E76',
+                    200: '#66645E',
+                },
+                'secondary': '#F5C64F',
+                'accent': '#F3F0EA',
+                'black': '#303031',
+                'white': '#FFFFFF',
+                'beige': '#F9F9F9',
             },
             boxShadow: {
                 // 'base': '0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10)',
@@ -76,12 +48,28 @@ module.exports = {
 
         },
     },
+    daisyui: {
+        themes: [
+            {
+                mytheme: {
+                    "primary": "#81BFA8",
+                    "secondary": "#F5C64F",
+                    "accent": "#F3F0EA",
+                    "neutral": "#3d4451",
+                    "base-100": "#ffffff",
+                },
+            },
+            "dark",
+        ],
+    },
     plugins: [
-        require('@tailwindcss/typography'),
+        require("@tailwindcss/typography"),
         require('@tailwindcss/forms')({
             strategy: 'class', // only generate global styles
-        })
+        }),
         // require('@tailwindcss/line-clamp'),
         // require('@tailwindcss/aspect-ratio'),
-    ],
+        require("daisyui"),
+
+],
 }
