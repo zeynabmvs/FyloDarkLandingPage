@@ -12,11 +12,11 @@ module.exports = {
         container: {
             center: true,
         },
-        screens: {
-            'mobile': '375px',
-            'laptop': '1440px',
+        // screens: {
+            // 'mobile': '375px',
+            // 'laptop': '1440px',
             // 'tablet-down': { 'max': '768px'},
-        },
+        // },
         extend: {
             colors: {
                 'primary':{
@@ -37,8 +37,10 @@ module.exports = {
                 // 'base': '0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px -1px rgba(0, 0, 0, 0.10)',
             },
             fontFamily: {
-                'primary': "IRANYekanX, serif"
-            },
+                // 'primary': "IRANYekanX, serif",
+                'display': "DreamAvenue, serif",
+                'roboto': "Roboto, sans-serif",
+},
 
             backgroundImage: {
                 // 'dark-gradient-meta-cell': 'linear-gradient(270deg, #334155 0%, rgba(51, 65, 85, 0.51) 48.81%, rgba(51, 65, 85, 0.00) 100%)',

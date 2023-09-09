@@ -1,109 +1,38 @@
 @import "tailwindcss/base";
+
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
 
 
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 100;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Thin.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Thin.woff2') format('woff2');*/
-/*}*/
+@font-face {
+    font-family: DreamAvenue;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../assets/fonts/woff/Dream-Avenue.ttf') format('truetype'),
+}
 
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 200;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-UltraLight.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-UltraLight.woff2') format('woff2');*/
-/*}*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 300;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Light.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Light.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 500;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Medium.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Medium.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 600;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-DemiBold.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-DemiBold.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 800;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-ExtraBold.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-ExtraBold.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 900;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Black.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Black.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 950;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-ExtraBlack.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: 1000;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Heavy.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Heavy.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: bold;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Bold.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Bold.woff2') format('woff2');*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: IRANYekanX;*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-display: swap;*/
-/*    src: url('../assets/fonts/woff/IRANYekanX-Regular.woff') format('woff'),*/
-/*        url('../assets/fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');*/
-/*}*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-display;
+    }
+}
+
+@layer components {
+    [data-theme="mytheme"] .btn {
+        @apply text-white w-fit	;
+    }
+
+    .card {
+        @apply rounded-lg;
+    }
+}
 
 /*:root {*/
 /*    --sticky-header-height: 73px;*/
