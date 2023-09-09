@@ -433,8 +433,8 @@ html {
 }
 
 :root {
-  --p: 158 33% 63%;
-  --pf: 158 33% 56%;
+  --p: 158 24% 55%;
+  --pf: 158 24% 48%;
   --sf: 43 89% 57%;
   --af: 40 27% 87%;
   --nf: 219 14% 21%;
@@ -445,7 +445,7 @@ html {
   --wa: 43 96% 56%;
   --er: 0 91% 71%;
   --bc: 146 0% 19%;
-  --pc: 156 13% 13%;
+  --pc: 157 13% 12%;
   --sc: 41 36% 14%;
   --ac: 40 1% 18%;
   --nc: 221 6% 84%;
@@ -510,8 +510,8 @@ html {
 }
 
 [data-theme=mytheme] {
-  --p: 158 33% 63%;
-  --pf: 158 33% 56%;
+  --p: 158 24% 55%;
+  --pf: 158 24% 48%;
   --sf: 43 89% 57%;
   --af: 40 27% 87%;
   --nf: 219 14% 21%;
@@ -522,7 +522,7 @@ html {
   --wa: 43 96% 56%;
   --er: 0 91% 71%;
   --bc: 146 0% 19%;
-  --pc: 156 13% 13%;
+  --pc: 157 13% 12%;
   --sc: 41 36% 14%;
   --ac: 40 1% 18%;
   --nc: 221 6% 84%;
@@ -582,6 +582,10 @@ html {
   --b2: 213 18% 12%;
   --b3: 213 18% 10%;
   --bc: 220 13% 69%;
+}
+
+:root {
+  --padding-card : 2rem 2.5rem 1.75rem 2.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1351,6 +1355,13 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 .card figure {
   display: flex;
   align-items: center;
@@ -1390,6 +1401,15 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--nc) / var(--tw-text-opacity));
 }
 
+.chat {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .drawer {
   position: relative;
   display: grid;
@@ -1410,6 +1430,13 @@ h1, h2, h3, h4, h5, h6 {
     border-color: hsl(var(--pf) / var(--tw-border-opacity));
     --tw-bg-opacity: 1;
     background-color: hsl(var(--pf) / var(--tw-bg-opacity));
+  }
+
+  .btn-neutral:hover {
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--nf) / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--nf) / var(--tw-bg-opacity));
   }
 
   .btn.glass:hover {
@@ -1756,6 +1783,23 @@ h1, h2, h3, h4, h5, h6 {
   border-color: hsl(var(--pf) / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: hsl(var(--pf) / var(--tw-bg-opacity));
+}
+
+.btn-neutral {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--n) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--nc) / var(--tw-text-opacity));
+  outline-color: hsl(var(--n) / 1);
+}
+
+.btn-neutral.btn-active {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--nf) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--nf) / var(--tw-bg-opacity));
 }
 
 .btn.glass {
@@ -2350,6 +2394,10 @@ h1, h2, h3, h4, h5, h6 {
   border-top-width: 4px;
 }
 
+.btn-block {
+  width: 100%;
+}
+
 .menu-horizontal {
   display: inline-flex;
   flex-direction: row;
@@ -2463,18 +2511,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="mytheme"] .btn {
-  width: -moz-fit-content;
-  width: fit-content;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.card {
-  /*@apply rounded-lg;*/
+  color: hsl(var(--b1) / var(--tw-text-opacity));
 }
 
 #members {
-  box-shadow: 16px 16px 0 0 #71A894 !important;
+  box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
 }
 
 .visible {
@@ -2508,6 +2550,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-4 {
@@ -2606,9 +2652,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 296px;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-\[484px\] {
+  width: 484px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-1 {
@@ -2621,6 +2670,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .flex-shrink {
   flex-shrink: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 
 .scale-\[1\.05\] {
@@ -2855,6 +2916,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 7rem;
 }
 
+.pb-36 {
+  padding-bottom: 9rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -2919,16 +2984,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
+.font-code {
+  font-family: Encode Sans, sans-serif;
+}
+
 .font-display {
   font-family: DreamAvenue, serif;
 }
 
 .font-roboto {
   font-family: Roboto, sans-serif;
-}
-
-.font-code {
-  font-family: Encode Sans, sans-serif;
 }
 
 .text-2xl {
@@ -3035,7 +3100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(113 168 148 / var(--tw-text-opacity));
+  color: hsl(var(--p) / var(--tw-text-opacity));
 }
 
 .text-slate-400 {
@@ -3118,11 +3183,6 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 
   src: url('../assets/fonts/woff/Dream-Avenue.ttf') format('truetype'),
-}
-
-:root {
-  --padding-card : 2rem 2.5rem 1.75rem 2.5rem
-
 }
 
 .attribution {

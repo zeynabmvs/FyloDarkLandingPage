@@ -30,18 +30,12 @@ module.exports = {
 
             },
             colors: {
-                'primary':{
-                    DEFAULT: '#71A894',
-                    lighter: '#81BFA8',
-                } ,
+                "primary-light": "#81BFA8",
                 'gray': {
                     100: '#807E76',
                     200: '#66645E',
                 },
-                'secondary': '#F5C64F',
-                'accent': '#F3F0EA',
                 'black': '#303031',
-                'white': '#FFFFFF',
                 'beige': '#F9F9F9',
             },
             fontFamily: {
@@ -58,7 +52,7 @@ module.exports = {
         themes: [
             {
                 mytheme: {
-                    "primary": "#81BFA8",
+                    "primary": "#71A894",
                     "secondary": "#F5C64F",
                     "accent": "#F3F0EA",
                     "neutral": "#3d4451",

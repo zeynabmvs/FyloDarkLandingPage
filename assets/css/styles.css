@@ -15,10 +15,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root {
-    --padding-card : 2rem 2.5rem 1.75rem 2.5rem
-}
 
+@layer base {
+    :root {
+        --padding-card : 2rem 2.5rem 1.75rem 2.5rem;
+    }
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -31,16 +33,13 @@
 
 @layer components {
     [data-theme="mytheme"] .btn {
-        @apply text-white w-fit	;
+        @apply text-base-100;
     }
 
-    .card {
-        /*@apply rounded-lg;*/
-    }
     #members {
-        -webkit-box-shadow: 16px 16px 0 0 #71A894 !important;
-        -moz-box-shadow: 16px 16px 0 0 #71A894 !important;
-        box-shadow: 16px 16px 0 0 #71A894 !important;
+        -webkit-box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
+        -moz-box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
+        box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
 
     }
 }
