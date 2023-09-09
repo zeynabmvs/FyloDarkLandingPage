@@ -33,14 +33,21 @@
 
 @layer components {
     [data-theme="mytheme"] .btn {
-        @apply text-base-100;
+        @apply text-base-100 capitalize;
     }
-
+    .card-compact .card-body {
+        padding: 1.5rem;
+    }
     #members {
         -webkit-box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
         -moz-box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
         box-shadow: 16px 16px 0 0 hsl(var(--p)) !important;
 
+    }
+    #card-1 {
+        -webkit-box-shadow:  0 16px 0 -4px hsl(var(--p)) !important;
+        -moz-box-shadow:  0 16px 0 -4px hsl(var(--p)) !important;
+        box-shadow:  0 16px 0 -4px hsl(var(--p)) !important;
     }
 }
 
