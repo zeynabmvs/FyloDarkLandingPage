@@ -50,6 +50,10 @@
         box-shadow:  0 16px 0 -4px hsl(var(--p)) !important;
     }
 }
+#divider {
+    background-image: url("assets/img/Ellipse.png");
+    background-repeat: repeat;
+}
 
 
 
