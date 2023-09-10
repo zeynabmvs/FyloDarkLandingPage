@@ -1923,6 +1923,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
 .block {
   display: block;
 }
@@ -2165,6 +2173,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
