@@ -39,9 +39,8 @@ module.exports = {
                 'beige': '#F9F9F9',
             },
             fontFamily: {
-                'display': "DreamAvenue, serif",
-                'roboto': "Roboto, sans-serif",
-                'code': "Encode Sans, sans-serif",
+                'display': "DmDisplay, sans-serif",
+                'code': "Encode, sans-serif",
             },
 
             backgroundImage: {

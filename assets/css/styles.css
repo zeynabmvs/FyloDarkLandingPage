@@ -4,16 +4,45 @@
 
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: DmDisplay;
+    src: url(../assets/fonts/DMSerifDisplay-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
-    font-family: DreamAvenue;
+    font-family: Encode;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../assets/fonts/woff/EncodeSansExpanded-Bold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: Encode;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../assets/fonts/woff/EncodeSansExpanded-SemiBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: Encode;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../assets/fonts/woff/EncodeSansExpanded-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: Encode;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../assets/fonts/woff/Dream-Avenue.ttf') format('truetype'),
+    src: url('../assets/fonts/woff/EncodeSansExpanded-Regular.ttf') format('truetype'),
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
 @layer base {
